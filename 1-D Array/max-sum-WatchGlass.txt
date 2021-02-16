@@ -1,0 +1,34 @@
+//maximum sum of watch glass using C++.
+#include<iostream>
+using namespace std;
+const int row = 6;
+const int col = 6;
+int findHourGlassSum(int mat[row][col])
+{
+if (row<5 || col<5)
+return -1;
+int maxSum = 0;
+for (int i=0; i<row-2; i++)
+{
+for (int j=0; j<col-2; j++)
+{
+int hrSum = (mat[i][j]+mat[i][j+1]+mat[i][j+2])+ (mat[i+1][j+1])+ (mat[i+2][j]+mat[i+2][j+1]+mat[i+2][j+2]);
+maxSum = max(maxSum, hrSum);
+}
+}
+return maxSum;
+}
+int main() {
+int mat[row][col],i,j;
+for(i=0;i<6;i++){
+    for( j=0;j<6;j++){
+    cin>>mat[i][j];
+    }
+}
+int maxSum = findHourGlassSum(mat);
+if (maxSum == -1)
+cout<<"Not possible";
+else
+cout<<maxSum;
+return 0;
+}
