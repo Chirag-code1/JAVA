@@ -1,6 +1,5 @@
 // Java program to split array and move first 
 // part to end. 
-
 import java.util.*; 
 import java.lang.*; 
 public class Main { 
