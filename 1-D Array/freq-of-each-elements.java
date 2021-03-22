@@ -1,4 +1,4 @@
-//Q-Write a java program to count occurrences of each element in an array?*
+//Q-Write a java program to count occurrences of each element in an array?
 import java.util.Scanner;
 public class Main{
     public static void main(String[] args){
