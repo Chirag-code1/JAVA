@@ -38,4 +38,3 @@ public class Main {
 	}
 }
 
-// This code is contributed by Sam007
