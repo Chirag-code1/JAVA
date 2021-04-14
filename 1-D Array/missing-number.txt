@@ -1,5 +1,4 @@
 //Q-Write a java program to find a missing number in an integer array?
-
 //Input: n=5
 //Input elements: 1,2,4,5,0
 //Outcome: Missing element:3
