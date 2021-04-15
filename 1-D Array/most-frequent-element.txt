@@ -35,7 +35,7 @@ public class Main{
                 count=i;
             }
         }
-        
+       
            System.out.println("___________________________");
                 System.out.println(array[count]+" appeared maximum numbers of times i.e "+max+" times.");
     }
