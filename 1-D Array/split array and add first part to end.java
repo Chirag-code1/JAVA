@@ -15,7 +15,7 @@ public class Main {
 		} 
 	} 
 
-	// Driver code 
+	// Driver code
 	public static void main(String[] args) 
 	{ 
 		int arr[] = { 12, 10, 5, 6, 52, 36 }; 
