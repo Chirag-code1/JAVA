@@ -20,7 +20,7 @@ bool check_duck(string num)
 
 int main(void)
 {
-	string num = "1023";
+	string num = "1026573";
 	if (check_duck(num))
 		cout << "It is a duck number\n";
 	else
