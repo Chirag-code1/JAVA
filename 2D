@@ -1,1 +1,105 @@
 
+Matrix Multiplication
+Given two matrices A and B in the form of two dimensional arrays, find the dot product of these two matrices.
+
+Input
+
+First line of input will contain an integer T = no. of test cases. Each test case will follow in multiple lines. First line of each test case will contain two integers R1 = no. of rows in matrix A and C1 = no. of columns in matrix A. Next R1 lines will each contain C1 space separated integers. Next line again contain two integers R2 = no. of rows in B and C2 = no. columns in B. C1 will be equal to R2. 1 <= R1,R2,C1,C2 <= 50
+
+Output
+
+For each test case print matrix of size R1*C2 in R1 lines with each line containing C2 space separated integers of corresponding row.
+
+*********************************************************************************************************************
+Solution:
+
+import java.util.Scanner;
+
+class Main
+{
+    public static void main(String[] args)
+    {
+      
+        // 2-D Array:-->
+         Scanner sc= new Scanner(System.in);
+         int T=sc.nextInt();
+
+while(T>0){
+         int rows= sc.nextInt();
+         int colms= sc.nextInt();
+
+         int array[][]= new int[rows][colms];
+         for(int i=0;i<rows;i++){
+             for(int j=0;j<colms;j++){
+                 array[i][j]=sc.nextInt();
+                                    }
+                                 }
+
+int ROWS= sc.nextInt();
+int COLMS= sc.nextInt();
+int BARRAY[][]= new int[ROWS][COLMS];
+for(int i=0;i<ROWS;i++){
+    for(int j=0;j<COLMS;j++){
+        BARRAY[i][j]=sc.nextInt();
+        
+    }
+}
+/* System.out.print("First Array:\n");
+for(int i=0;i<rows;i++){
+             for(int j=0;j<colms;j++){
+                 System.out.print(array[i][j]+"   ");
+                
+                                    }
+                                     System.out.print("\n");
+                                 }
+                                 
+ System.out.print("\n\n\n");
+
+System.out.print("Second Array:\n");
+for(int i=0;i<ROWS;i++){
+    for(int j=0;j<COLMS;j++){
+        System.out.print(BARRAY[i][j]+"   ");
+        
+    }
+            System.out.print("\n");
+
+}
+ System.out.print("\n\n\n");
+*/
+//Operation:
+int marray[][]= new int[rows][COLMS];
+
+   if(colms!=ROWS)
+   System.out.println("Multiplication is not possible in this case because of voilation of C1 not being equal to R2.");     
+    else {
+
+for(int i=0;i<rows;i++)    
+{    
+for(int j=0;j<COLMS;j++)    
+{    
+marray[i][j]=0;    
+for(int k=0;k<colms;k++)    
+{    
+marray[i][j]+=array[i][k]*BARRAY[k][j];    
+}    
+}    
+}  
+//printing of marray:
+//System.out.print("Array after multiplication:\n");
+for(int i=0;i<rows;i++){
+    for(int l=0;l<COLMS;l++){
+        System.out.print(marray[i][l]+" ");
+    }
+            System.out.print("\n");
+
+}
+ //System.out.print("\n\n\n");
+
+    } //else ending.
+    T--;
+
+}
+
+
+    }
+    }
