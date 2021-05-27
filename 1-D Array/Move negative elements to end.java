@@ -35,7 +35,7 @@ public class Main {
 			arr[i] = temp[i]; 
 	} 
 	
-	// Driver code 
+	
 	public static void main(String arg[]) 
 	{ 
 		int arr[] = { 1, -1, -3, -2, 7, 5, 11, 6 }; 
