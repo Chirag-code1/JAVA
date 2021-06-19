@@ -20,7 +20,8 @@ public class Main
         if(rows != cols){    
             System.out.println("Matrix should be a square matrix");    
         }    
-        else {    
+        else
+            {    
             //Checks if diagonal elements are equal to 1 and rest of elements are 0    
             for(int i = 0; i < rows; i++){    
                 for(int j = 0; j < cols; j++){    
