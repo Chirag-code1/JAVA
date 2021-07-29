@@ -1,4 +1,5 @@
 #include<iostream>
+
 using namespace std;
 int main () {
    int a[10][10] = { {0, 0, 9} , {5, 0, 8} , {7, 0, 0} };
